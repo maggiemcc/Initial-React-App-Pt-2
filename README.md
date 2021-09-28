@@ -16,5 +16,8 @@
 
 - Push your repository to GitHub, deploy your repo using Netlify, and submit both your GitHub URL AND your Netlify URL via this Canvas assignment.
 
+## Netlify:
+    - [Netlify](https://initial-react-app-pt2.netlify.app/)# Initial-React-App-Pt-2
+
 ## Original Project (project 1):
     - [Github](https://github.com/maggiemcc/inital-react-project)# Initial-React-App
