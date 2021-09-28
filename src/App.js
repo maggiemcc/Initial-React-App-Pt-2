@@ -18,14 +18,17 @@ const App = () => {
 
   return (
     <div className="App">
+      <div style={{maxWidth: 1000, margin: "auto"}}>
       <div style={{border: "2px solid white", padding: "2% 0", background: "black"}}>
       <h1>Star Wars</h1>
+      
 
       <FilmContainer sx={{ m: "auto", width: "auto" }} />
       </div>
       <div>
         <h5 style={{color:"white"}}>DGM3790 {bull} © Maggie McCausland {bull} 2021</h5>
       </div>
+    </div>
     </div>
   );
 };

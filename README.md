@@ -3,21 +3,18 @@
 
     - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Use a data source of your own choosing in JSON format that has lists of JavaScript objects within it 
-    - films.json
+- Continue to retrieve your local API data to render a list of UI items.
 
-- Create at least 2 React custom components and display them on your main page:
-    - At least one custom component should be a "parent" of another functional React component
-    - At least one other custom component should be a "child" React component
+- Continue to render your local API data using some combination of Cards, Avatars, List, etc. elements. These UI elements will be from the MUI version 5 package.
 
-- Use the import keyword to bring your JSON data into your component files
-- Use the import keyword to add your components to your App.js file
-- Make sure each component can properly render some list of JSON object properties
-- Demonstrate next generation JavaScript usage in your components including new operators and array methods
-- Commit and push your source files into a Git repository named something like "initial-react-app"      
-    - Name: initialProject
-    - Be sure your repo includes a ReadMe.md file.  Inside that ReadMe file use Markdown notation to list the features of your app
+- Add at least two ways in which a user may interact with your UI (click, input, etc.) and handle the events with some response by your UI.
+
+- Use the useState hook to store some local state and have some mechanism for updating that state. Make sure you use a proper method for updating state that depends on previous state!
+
+- Submit a Github & Netlify URL for your source code for this assignment.
+
 
 - Push your repository to GitHub, deploy your repo using Netlify, and submit both your GitHub URL AND your Netlify URL via this Canvas assignment.
 
-    - [Netlify](https://3790-initial-app.netlify.app/)# Initial-React-App-Pt-2
+## Original Project (project 1):
+    - [Github](https://github.com/maggiemcc/inital-react-project)# Initial-React-App

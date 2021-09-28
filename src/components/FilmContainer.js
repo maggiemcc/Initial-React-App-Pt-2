@@ -4,11 +4,15 @@ import FilmCard from "./FilmCard";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
+import "./FilmCard.css";
 
 const favoriteStyle = {
   margin: "2% auto",
   padding: "2% 0px 4% 0",
-  background: "rgb(200, 200, 200)",
+  // background: "rgb(200, 200, 200)",
+  // background: "black",
+  color: "white",
+  border: "2px solid white",
   // borderRadius: "5px",
   borderRadius: "50px / 100px",
   width: "90%",
@@ -80,13 +84,13 @@ const FilmContainer = () => {
   return (
     <Box>
       <div style={favoriteStyle}>
-        <h3 style={{ margin: "2% 0" }}> My Favorites </h3>
+        <h3 style={{ margin: "2% 0", textDecoration: "underline" }}> My Favorites </h3>
 
         <div>
           {favorites.map((filmId) => {
             return (
               <div key={filmId} style={{ padding: "0 5%", }}>
-                <p style={{ margin: "1% 0", fontFamily: "courier",}}>
+                <p style={{ margin: "1% 0", fontFamily: "courier", fontWeight: "bold"}}>
                   {" "}
                   {bull}
                   {filmId}
