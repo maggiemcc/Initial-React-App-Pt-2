@@ -1,7 +1,7 @@
-## Create a simple React single-page web app following these steps:
+## Second Course Project - Update UI Components with Events and State:
 - Use create-react-app to bootstrap your project
 
-    - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 - Continue to retrieve your local API data to render a list of UI items.
 
