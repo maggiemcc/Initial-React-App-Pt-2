@@ -8,9 +8,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const FilmCard = (props) => {
-  const imageStyle = {
-    // height: 200,
-    // width: "auto",
+  let imageStyle = {
     height: "auto",
     width: "93%",
     overflow: "hidden",
@@ -37,7 +35,6 @@ const FilmCard = (props) => {
     <Card
       sx={{
         width: "450px",
-        // height: "auto",
         display: "flex",
         flexDirection: "column",
         m: 2,
