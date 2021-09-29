@@ -134,9 +134,9 @@ const FilmContainer = () => {
                   <div>
                     <h4 style={filmInfoStyle}>{film.title}:</h4>
                     <p style={filmInfoStyle}>{film.release_date}</p>
-                    {bull}
+                    <div style={{display: "inline", paddingRight: "2%"}}>{bull}</div>
                     <p style={filmInfoStyle}>{film.rated}</p>
-                    {bull}
+                    <div style={{display: "inline", paddingRight: "2%"}}>{bull}</div>
                     <p style={filmInfoStyle}>{film.run_time}</p>
 
                   </div>
