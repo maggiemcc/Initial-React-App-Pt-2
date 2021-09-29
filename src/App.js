@@ -1,6 +1,5 @@
 import "./App.css";
 import FilmContainer from "./components/FilmContainer";
-// import ModalInfoContainer from "./components/ModalInfoContainer";
 import Box from "@mui/material/Box";
 
 const App = () => {
@@ -28,8 +27,6 @@ const App = () => {
             <h1>Star Wars</h1>
             </div>
             <div style={{margin: "auto 0"}}>
-            {/* <ModalInfoContainer /> */}
-
             </div>
           </div>
 

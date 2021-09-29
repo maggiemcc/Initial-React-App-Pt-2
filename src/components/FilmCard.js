@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-// import Chip from "@mui/material/Chip";
 import InfoIcon from "@mui/icons-material/Info";
 
 

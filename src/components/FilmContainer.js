@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import "./FilmCard.css";
 import Typography from "@mui/material/Typography";
-// import ModalInfoChip from "../components/ModalInfoChip";
 
 const modalStyle = {
   position: "absolute",
