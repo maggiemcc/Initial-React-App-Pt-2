@@ -48,32 +48,43 @@ const FilmCard = (props) => {
         >
           {props.film.title} <br></br>
         </Typography>
-        <div style={{ display: "grid", gridTemplateColumns: "40% auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "30% auto" }}>
+        {/* <div> */}
           <div style={{ margin: "auto" }}>
             <img style={imageStyle} src={props.film.image} alt="poster" />
-      <div style={{display: "flex", margin: "auto", padding: 0, height: 40, lineHeight: 40, justifyContent: "center"}}>
-            <Typography
-              sx={{ fontWeight: "bold" }}
-              color="primary.contrastText"
-              typography="h6"
-            >
-              Episode: {props.film.episode_id}
-            </Typography>
-            <CardActions
-              sx={{
-                justifyContent: "space-evenly",
+
+            <div
+              style={{
+                display: "flex",
+                margin: "0 auto",
+                padding: 0,
+                height: 40,
+                lineHeight: 40,
+                justifyContent: "center",
                 textAlign: "center",
               }}
             >
-              <IconButton
-                sx={{ p: 0, m: 0, color: favorite ? "#F00" : "#fff" }}
-                onClick={handleFavoriteClick}
+              <Typography
+                sx={{
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  lineHeight: "2.5",
+                  paddingRight: "0.3%",
+                }}
+                color="primary.contrastText"
+                typography="h6"
               >
-                <FavoriteIcon />
-              </IconButton>
-            </CardActions>
+                EP: {props.film.episode_id}
+              </Typography>
+              <CardActions>
+                <IconButton
+                  sx={{ p: 0, m: 0, color: favorite ? "#F00" : "#fff" }}
+                  onClick={handleFavoriteClick}
+                >
+                  <FavoriteIcon />
+                </IconButton>
+              </CardActions>
             </div>
-
           </div>
           <p
             style={{
