@@ -5,6 +5,9 @@ import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+// import Chip from "@mui/material/Chip";
+import InfoIcon from "@mui/icons-material/Info";
+
 
 const FilmCard = (props) => {
   let imageStyle = {
@@ -24,6 +27,12 @@ const FilmCard = (props) => {
     setFavorite(!favorite);
     props.addToFavoritesFunction(props.film);
   };
+
+  const handleInfoClick = () => {
+    console.log("thanks for clicking!");
+    props.modalFunction();
+  };
+
 
   return (
     <Card
@@ -83,7 +92,14 @@ const FilmCard = (props) => {
                 >
                   <FavoriteIcon />
                 </IconButton>
+                <IconButton
+                  sx={{ p: 0, m: 0, color: "white" }}
+                  onClick={handleInfoClick}
+                >
+                  <InfoIcon />
+                </IconButton>
               </CardActions>
+              
             </div>
           </div>
           <p
