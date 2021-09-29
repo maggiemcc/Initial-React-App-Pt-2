@@ -27,7 +27,7 @@ const ModalInfoChip = (props) => {
       }
       sx={{
         margin: "auto auto",
-        background: "red",
+        background: "white",
         width: "130px",
         fontWeight: "bold",
         "&:hover": {
