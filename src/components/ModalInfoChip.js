@@ -31,8 +31,8 @@ const ModalInfoChip = (props) => {
         width: "130px",
         fontWeight: "bold",
         "&:hover": {
-          background: "blue",
-          border: "1px solid white"
+          background: "red",
+          // border: "1px solid white"
         },
       }}
     />
