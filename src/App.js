@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div style={{ maxWidth: 1000, margin: "auto" }}>
+      <div style={{ maxWidth: 1200, margin: "auto" }}>
         <div
           style={{
             border: "2px solid white",
