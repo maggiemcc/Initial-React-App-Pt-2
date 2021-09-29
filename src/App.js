@@ -23,11 +23,11 @@ const App = () => {
             background: "black",
           }}
         >
-          <div style={{ display: "flex", justifyContent: "center"}}>
+          <div style={{ display: "block", justifyContent: "center"}}>
             <div>
             <h1>Star Wars</h1>
             </div>
-            <div>
+            <div style={{margin: "auto 0"}}>
             <ModalInfoContainer />
 
             </div>

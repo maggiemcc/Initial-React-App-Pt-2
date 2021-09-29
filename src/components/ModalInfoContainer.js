@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import "./FilmCard.css";
-import ModalInfoCard from "../components/ModalInfoCard";
+import ModalInfoChip from "../components/ModalInfoChip";
 // import { typography } from "@mui/system";
 
 const modalStyle = {
@@ -60,7 +60,7 @@ const ModalInfoContainer = () => {
   return (
     <Box>
       <div>
-        <ModalInfoCard modalFunction={handleOpen} />
+        <ModalInfoChip modalFunction={handleOpen} />
 
         <Modal open={open} onClose={handleClose}>
           <Box sx={modalStyle}>
