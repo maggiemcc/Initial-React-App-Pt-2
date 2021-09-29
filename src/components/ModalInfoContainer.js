@@ -48,7 +48,7 @@ const ModalInfoContainer = () => {
 
         <Modal open={open} onClose={handleClose}>
           <Box sx={modalStyle}>
-            <Typography variant="h6">Star Wars Films Information</Typography>
+            <Typography variant="h6">More Star Wars Films Info</Typography>
             {films.map((film) => {
               return (
                 <div style={filmInfoContainerStyle} key={film.episode_id}>
