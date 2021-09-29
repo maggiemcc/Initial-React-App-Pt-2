@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const FilmCard = (props) => {
@@ -17,11 +16,6 @@ const FilmCard = (props) => {
     borderRadius: 5,
     padding: 0,
     margin: 0,
-  };
-
-  const handleInfoClick = () => {
-    console.log("thanks for clicking!");
-    props.modalFunction();
   };
 
   const [favorite, setFavorite] = React.useState(false);
@@ -52,11 +46,19 @@ const FilmCard = (props) => {
           typography="h6"
           gutterBottom
         >
-          {props.film.title}
+          {props.film.title} <br></br>
         </Typography>
-        <div style={{ display: "grid", gridTemplateColumns: "35% auto" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "40% auto" }}>
           <div style={{ margin: "auto" }}>
             <img style={imageStyle} src={props.film.image} alt="poster" />
+      <div style={{display: "flex", margin: "auto", padding: 0, height: 40, lineHeight: 40, justifyContent: "center"}}>
+            <Typography
+              sx={{ fontWeight: "bold" }}
+              color="primary.contrastText"
+              typography="h6"
+            >
+              Episode: {props.film.episode_id}
+            </Typography>
             <CardActions
               sx={{
                 justifyContent: "space-evenly",
@@ -64,19 +66,14 @@ const FilmCard = (props) => {
               }}
             >
               <IconButton
-                sx={{ p: 0, color: "white" }}
-                onClick={handleInfoClick}
-              >
-                <InfoIcon sx={{ paddingRight: "20%" }} />
-              </IconButton>
-
-              <IconButton
                 sx={{ p: 0, m: 0, color: favorite ? "#F00" : "#fff" }}
                 onClick={handleFavoriteClick}
               >
                 <FavoriteIcon />
               </IconButton>
             </CardActions>
+            </div>
+
           </div>
           <p
             style={{
